@@ -7,7 +7,7 @@ Platform agnostic utility libraries using CMake.
 At my day-job, I recently got confronted with some utility libraries written in `C/C++`.
 The libraries were required to run on different platforms (to be precise: different targets in an embedded software development setting).
 I.e. the libraries were expected to be compileable for different platforms without source code changes required.
-The different platforms shared a set of common functionality, differing in subtle ways in how this functionality is provided.
+The different platforms shared a set of common functionality, differing in subtle ways in how this functionality was provided.
 
 There were some measures taken to hide the platforms' differences from the utility libraries.
 Still, the code base deserved improvement to obtain modularity and easy extensibility.
@@ -63,6 +63,7 @@ In the following `parent_X`, `util_X` and `platform_X` represent a parent projec
   This way, we get rid of both issues mentioned above:
   - Introducing a new `util_X` library, we just add `common_umbrella` as link dependency and immediately have all the platforms available.
   - The `platform_X` are fully agnostic of the `util_X` libraries and no longer reference potentially non-existing targets.
+
   Note that with the layout described above, we achieve both a modular and an extensible layout:
   - All three types of targets (`parent_X`, `util_X` and `platform_X`) can be represented in a self-contained way.
   - When selecting a specific platform in some parent project `parent_X`, no additional plumbing is required (apart from including the platform itself).
