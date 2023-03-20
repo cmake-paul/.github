@@ -7,7 +7,7 @@ Platform agnostic utility libraries using CMake.
 At my day-job, I recently got confronted with some utility libraries written in `C/C++`.
 The libraries were required to run on different platforms (to be precise: different targets in an embedded software development setting).
 I.e. the libraries were expected to be compileable for different platforms without source code changes required.
-The different platforms shared a set of common functionality, differing in subtle ways in how this functionality is provided.
+The different platforms shared a set of common functionality, differing in subtle ways in how this functionality was provided.
 
 There were some measures taken to hide the platforms' differences from the utility libraries.
 Still, the code base deserved improvement to obtain modularity and easy extensibility.
