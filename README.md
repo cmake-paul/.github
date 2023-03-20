@@ -68,6 +68,14 @@ In the following `parent_X`, `util_X` and `platform_X` represent a parent projec
   - When selecting a specific platform in some parent project `parent_X`, no additional plumbing is required (apart from including the platform itself).
   - Introducing a new target of one type does not require adapting any target of another type (it doesn't even require adapting targets of the same type).
 
+## Example
+
+The repositories living under this origanization resemble a basic example consisting of two parent projects `parent_A` and `parent_B`, two utility libraries `util_A` and `util_B` alongside two platforms `platform_A` and `platform_B`.
+The high-level link dependency relation ships are shown in the following diagram.
+Checkout the respective `CMakeLists.txt` for details.
+
+![Diagram](img/diagram.svg)
+
 ## Shortcomings
 
 There is no free lunch, unfortunately.
