@@ -63,6 +63,7 @@ In the following `parent_X`, `util_X` and `platform_X` represent a parent projec
   This way, we get rid of both issues mentioned above:
   - Introducing a new `util_X` library, we just add `common_umbrella` as link dependency and immediately have all the platforms available.
   - The `platform_X` are fully agnostic of the `util_X` libraries and no longer reference potentially non-existing targets.
+
   Note that with the layout described above, we achieve both a modular and an extensible layout:
   - All three types of targets (`parent_X`, `util_X` and `platform_X`) can be represented in a self-contained way.
   - When selecting a specific platform in some parent project `parent_X`, no additional plumbing is required (apart from including the platform itself).
