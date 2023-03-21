@@ -72,7 +72,7 @@ In the following `parent_X`, `util_X` and `platform_X` represent a parent projec
 ## Example
 
 The repositories living under this origanization resemble a basic example consisting of two parent projects `parent_A` and `parent_B`, two utility libraries `util_A` and `util_B` alongside two platforms `platform_A` and `platform_B`.
-The high-level link dependency relation ships are shown in the following diagram.
+The high-level link dependency relationships are shown in the following diagram.
 Checkout the respective `CMakeLists.txt` for details.
 
 ![Diagram](img/diagram.svg)
