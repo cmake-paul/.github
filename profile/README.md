@@ -75,17 +75,17 @@ The repositories living under this origanization resemble a basic example consis
 [`common`](https://github.com/cmake-paul/common) defines the common interface for all platforms as described above.
 The high-level link dependency relationships are shown in the following diagram.
 
-![Diagram](img/diagram.svg)
+![Diagram](profile/img/diagram.svg)
 
 To highlight modularity, here is the above diagram with an emphasis put on the link dependencies introduced in `parent_B`'s, `util_A`'s, `platform_A`'s and `common`'s `CMakeLists.txt` respectively.
 
-![parent_B](img/parent_B.svg)
+![parent_B](profile/img/parent_B.svg)
 
-![util_A](img/util_A.svg)
+![util_A](profile/img/util_A.svg)
 
-![platform_A](img/platform_A.svg)
+![platform_A](profile/img/platform_A.svg)
 
-![common](img/common.svg)
+![common](profile/img/common.svg)
 
 Checkout the respective `CMakeLists.txt` for details.
 
