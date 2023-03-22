@@ -71,11 +71,23 @@ In the following `parent_X`, `util_X` and `platform_X` represent a parent projec
 
 ## Example
 
-The repositories living under this origanization resemble a basic example consisting of two parent projects `parent_A` and `parent_B`, two utility libraries `util_A` and `util_B` alongside two platforms `platform_A` and `platform_B`.
-The high-level link dependency relation ships are shown in the following diagram.
-Checkout the respective `CMakeLists.txt` for details.
+The repositories living under this origanization resemble a basic example consisting of two parent projects [`parent_A`](https://github.com/cmake-paul/parent_a) and [`parent_B`](https://github.com/cmake-paul/parent_b), two utility libraries [`util_A`](https://github.com/cmake-paul/util_a) and [`util_B`](https://github.com/cmake-paul/util_b) alongside two platforms [`platform_A`](https://github.com/cmake-paul/platform_a) and [`platform_B`](https://github.com/cmake-paul/platform_b).
+[`common`](https://github.com/cmake-paul/common) defines the common interface for all platforms as described above.
+The high-level link dependency relationships are shown in the following diagram.
 
 ![Diagram](img/diagram.svg)
+
+To highlight modularity, here is the above diagram with an emphasis put on the link dependencies introduced in `parent_B`'s, `util_A`'s, `platform_A`'s and `common`'s `CMakeLists.txt` respectively.
+
+![parent_B](img/parent_B.svg)
+
+![util_A](img/util_A.svg)
+
+![platform_A](img/platform_A.svg)
+
+![common](img/common.svg)
+
+Checkout the respective `CMakeLists.txt` for details.
 
 ## Shortcomings
 
